@@ -25,6 +25,7 @@ generate_btn.addEventListener('click', function() {
     document.getElementById("name").innerText = full_name
     document.getElementById("ticket_price").innerText = ticket_price + ' €'
     
+    // mostro il biglietto quando clicco genera
     let ticket_info = document.getElementById("d-none");
     ticket_info.classList.remove("d-none")
     ticket_info.classList.add("d-block")
@@ -33,6 +34,10 @@ generate_btn.addEventListener('click', function() {
 const reset_btn = document.getElementById("reset-btn");
 reset_btn.addEventListener('click', function() {
     let form = document.getElementById("form");
-
+    //elimino i dati dal form
     form.reset();
+    // nascondo il biglietto
+    let ticket_info = document.getElementById("d-none");
+    ticket_info.classList.remove("d-block")
+    ticket_info.classList.add("d-none")
 })
