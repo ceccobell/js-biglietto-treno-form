@@ -12,29 +12,31 @@
         <div class="row">
             <h1 class="text-white text-center my-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </div>
-        <div class="row bg-white rounded-top-2 p-3">
-            <div class="col-4 text-center">
-                <label for="full_name" class="form-label violet">Nome Cognome</label>
-                <input class="form-control border-violet" type="text" name="full_name" id="full_name" placeholder="nome e cognome">
+        <form id="form">
+            <div class="row bg-white rounded-top-2 p-3">
+                <div class="col-4 text-center">
+                    <label for="full_name" class="form-label violet">Nome Cognome</label>
+                    <input class="form-control border-violet" type="text" name="full_name" id="full_name" placeholder="nome e cognome">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="km" class="form-label violet">Km da percorrere</label>
+                    <input class="form-control border-violet" type="text" name="km" id="km" placeholder="kilometri">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="select-age" class="form-label violet">Fascia d'età</label>
+                    <select class="form-select border-violet" aria-label="Default select example" id="select-age">
+                        <option selected>Open this select menu</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="adulto">Adulto</option>
+                        <option value="senior">Senior( > 65 )</option>
+                      </select>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <label for="km" class="form-label violet">Km da percorrere</label>
-                <input class="form-control border-violet" type="text" name="km" id="km" placeholder="kilometri">
-            </div>
-            <div class="col-4 text-center">
-                <label for="select-age" class="form-label violet">Fascia d'età</label>
-                <select class="form-select border-violet" aria-label="Default select example" id="select-age">
-                    <option selected>Open this select menu</option>
-                    <option value="minorenne">Minorenne</option>
-                    <option value="adulto">Adulto</option>
-                    <option value="senior">Senior( > 65 )</option>
-                  </select>
-            </div>
-        </div>
-        <div class="row bg-white rounded-bottom-2 p-3">
+        </form>
+            <div class="row bg-white rounded-bottom-2 p-3">
             <div class="col-12 text-center">
                 <button type="button" class="btn violet" id="calculate-price">Genera</button>
-                <button type="button" class="btn violet">Annulla</button>
+                <button type="button" class="btn violet" id="reset-btn">Annulla</button>
             </div>
     </div>
     <div class="container d-none" id="d-none">

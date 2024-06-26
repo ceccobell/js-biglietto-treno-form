@@ -30,3 +30,9 @@ generate_btn.addEventListener('click', function() {
     ticket_info.classList.add("d-block")
 })
 
+const reset_btn = document.getElementById("reset-btn");
+reset_btn.addEventListener('click', function() {
+    let form = document.getElementById("form");
+
+    form.reset();
+})
