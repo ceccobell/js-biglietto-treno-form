@@ -10,16 +10,16 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <label for="" class="control-label">Nome Cognome</label>
+                <label for="full_name" class="form-label">Nome Cognome</label>
                 <input class="form-control" type="text" name="full_name" id="full_name" placeholder="nome e cognome">
             </div>
             <div class="col-4">
-                <label for="" class="control-label">Km da percorrere</label>
+                <label for="km" class="form-label">Km da percorrere</label>
                 <input class="form-control" type="text" name="km" id="km" placeholder="kilometri">
             </div>
             <div class="col-4">
-                <label for="" class="control-label">Fascia d'età</label>
-                <select class="form-select" aria-label="Default select example">
+                <label for="select-age" class="form-label">Fascia d'età</label>
+                <select class="form-select" aria-label="Default select example" id="select-age">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <button type="button" class="btn">Genera</button>
+                <button type="button" class="btn" id="calculate-price">Genera</button>
             </div>
             <div class="col-6">
                 <button type="button" class="btn">Annulla</button>
