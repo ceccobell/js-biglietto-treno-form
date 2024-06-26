@@ -23,6 +23,10 @@ generate_btn.addEventListener('click', function() {
     }
     ticket_price = ticket_price.toFixed(2);
     document.getElementById("name").innerText = full_name
-    document.getElementById("ticket_price").innerText = ticket_price 
+    document.getElementById("ticket_price").innerText = ticket_price + ' €'
+    
+    let ticket_info = document.getElementById("d-none");
+    ticket_info.classList.remove("d-none")
+    ticket_info.classList.add("d-block")
 })
 
